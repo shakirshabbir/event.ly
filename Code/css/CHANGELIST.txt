@@ -1,0 +1,51 @@
+LEGEND:
+A] means added
+R] means removed
+U] means updated
+
+#1:
+templatemo_style.css:752
+U] - added select, textarea element to .contact-form class rule definition that was already there but for input only
+.contact-form input, select, textarea {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#2:
+table-layout.css:2
+U] - changed margin to "-3em 0p" from "1em 0px" in .rwd-table
+.rwd-table {
+  margin: -1em 0;
+  min-width: 300px;  
+}
+
+#3:
+templatemo_style.css:807
+A] - added this rule to provide a new representation to heading-section elements that will be used for table caption headings
+   - underline removed. Font size changed to larger
+.heading-section .tableCaptionHeading{
+	border-bottom: medium none; font-size: large;
+}
+
+#4:
+templatemo_style.css:811
+A] - added this rule to provide a new representation to heading-section elements that will be used for table caption headings
+   - underline removed. Font size changed to larger
+.heading-section .tableCaptionHeadingLarger{
+	border-bottom: medium none; font-size: 1.9em;
+}
+
+#5:
+templatemo_style.css:192
+A] - added this rule to resize button for tables
+   - padding restricted to left and right 6px
+.tblButton {
+  padding: 0px 6px;
+}
+
+#6:
+templatemo_style.css:761
+A] - added this rule to adjust checkbox that was otherwise using 100% width as deafult with other input selectors in contact-form class
+.contact-form input[type="checkbox"]{
+  width: auto;
+}

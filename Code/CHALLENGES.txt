@@ -1,0 +1,3 @@
+It was interesting point to know that when doing Update, if we send update as it is, it wont do anything and the number of effected rows returned will be 0.
+Which infact looks as it is deceiving but actually thats how MYSQL is meant to be.
+So do, if $affectedRows!==false # remember it doesnt even works the opposite i.e. $affectedRows === true doesnt works.

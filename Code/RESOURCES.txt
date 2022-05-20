@@ -1,0 +1,23 @@
+//if ($user!=null) echo "<script>alert('New user on index.php is not null');</script>";
+
+http://formvalidator.net/#date-validators
+
+
+$query = $db->query('SELECT eventId FROM event_owners WHERE ownerId ='. $userId);
+$results = $query->fetchAll(PDO::FETCH_ASSOC);				
+$eventOwnedList = "";
+$countRows = count($results);
+if (count($results) > 0){
+		$i= 0;
+	foreach ($results as $row){
+		$i++;
+			$eventOwnedList.= $row['eventId'];
+		if ($i==$countRows)
+			$eventOwnedList.='';
+		else
+			$eventOwnedList.=',';						
+	}
+}
+
+
+?><script>alert('isset($eventId) = <?php echo (isset($eventId) ? "true" : "false"); ?>')</script><?php

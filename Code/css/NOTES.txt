@@ -1,0 +1,17 @@
+LEGEND:
+A] means added
+R] means removed
+U] means updated
+
+To minimize the button size:
+templatemo_style.css:752
+.contact-form input {
+	R] width:100%
+}
+
+On client page, there is a gap between client name and the buttons.
+To reduce that gap
+templatemo_style.css:482
+.heading-section {
+    U] margin-bottom: 22px;
+}
